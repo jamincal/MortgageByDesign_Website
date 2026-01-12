@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin, Award, Users, Home, ChevronDown } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
-
+import ContactForm from "@/components/ContactForm";
+import SocialEmbeds from "@/components/SocialEmbeds";
 const Index = () => {
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
@@ -171,7 +172,8 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            {/* Contact Info Cards */}
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
               {[
                 {
                   icon: Phone,
@@ -212,6 +214,20 @@ const Index = () => {
                   )}
                 </div>
               ))}
+            </div>
+
+            {/* Contact Form */}
+            <div className="bg-secondary p-8 md:p-12 rounded-sm shadow-elegant mb-16">
+              <h3 className="font-heading text-2xl text-foreground font-semibold mb-6 text-center">
+                Send Me a Message
+              </h3>
+              <ContactForm />
+            </div>
+
+            {/* Social Embeds */}
+            <div className="text-center">
+              <p className="text-muted-foreground font-body mb-6">Connect with me online</p>
+              <SocialEmbeds />
             </div>
           </div>
         </div>
