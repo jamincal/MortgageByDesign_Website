@@ -9,8 +9,8 @@ interface LinkedInProfileEmbedProps {
 }
 
 const LinkedInProfileEmbed = ({ 
-  profileUrl = "https://www.linkedin.com/in/erika-robinson",
-  postUrl = "https://www.linkedin.com/posts/erika-robinson-example-post"
+  profileUrl = "https://www.linkedin.com/in/erikalynne1093",
+  postUrl = "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7280987542972141569"
 }: LinkedInProfileEmbedProps) => {
   return (
     <div className="bg-card rounded-sm shadow-elegant overflow-hidden">
