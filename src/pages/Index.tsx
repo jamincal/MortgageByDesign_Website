@@ -1,7 +1,8 @@
 import { Phone, Mail, MapPin, Award, Users, Home, ChevronDown } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
 import ContactForm from "@/components/ContactForm";
-import SocialEmbeds from "@/components/SocialEmbeds";
+import LinkedInProfileEmbed from "@/components/LinkedInProfileEmbed";
+import GoogleBusinessEmbed from "@/components/GoogleBusinessEmbed";
 const Index = () => {
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
@@ -72,19 +73,13 @@ const Index = () => {
       {/* About Section */}
       <section id="about" className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* Profile Image Placeholder */}
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            {/* LinkedIn Profile Embed */}
             <div className="relative">
-              <div className="aspect-[4/5] bg-secondary rounded-sm overflow-hidden shadow-card relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-muted flex items-center justify-center">
-                      <Users className="w-16 h-16 text-muted-foreground" />
-                    </div>
-                    <p className="text-muted-foreground font-body text-sm">Your photo here</p>
-                  </div>
-                </div>
-              </div>
+              <LinkedInProfileEmbed 
+                profileUrl="https://www.linkedin.com/in/erika-robinson"
+                postUrl="https://www.linkedin.com/embed/feed/update/urn:li:share:YOUR_POST_ID"
+              />
               {/* Decorative Element */}
               <div className="absolute -bottom-6 -right-6 w-48 h-48 border-2 border-gold/30 rounded-sm -z-10" />
             </div>
@@ -158,6 +153,29 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Credibility / Reviews Section */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-4">Client Testimonials</p>
+            <h2 className="font-heading text-4xl md:text-5xl text-foreground font-semibold">
+              Trusted by Brokers Nationwide
+            </h2>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <GoogleBusinessEmbed 
+              businessName="Erika Robinson - Wholesale Mortgage Broker"
+              rating={5.0}
+              reviewCount={47}
+              businessUrl="https://g.page/your-business-page"
+              placeId="YOUR_GOOGLE_PLACE_ID"
+              address="Available Nationwide"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">
@@ -224,11 +242,6 @@ const Index = () => {
               <ContactForm />
             </div>
 
-            {/* Social Embeds */}
-            <div className="text-center">
-              <p className="text-muted-foreground font-body mb-6">Connect with me online</p>
-              <SocialEmbeds />
-            </div>
           </div>
         </div>
       </section>
