@@ -10,11 +10,11 @@ interface GoogleBusinessEmbedProps {
 }
 
 const GoogleBusinessEmbed = ({
-  businessName = "Erika Robinson - Wholesale Mortgage Broker",
+  businessName = "Mortgage By Design",
   rating = 5.0,
   reviewCount = 47,
-  businessUrl = "https://g.page/your-business-page",
-  placeId = "YOUR_PLACE_ID",
+  businessUrl = "https://g.page/mortgage-by-design",
+  placeId = "ChIJN1t_tDeuEmsRUsoyG83frY4",
   address = "Available Nationwide"
 }: GoogleBusinessEmbedProps) => {
   // Generate stars based on rating

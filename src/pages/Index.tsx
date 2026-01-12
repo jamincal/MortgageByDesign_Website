@@ -165,11 +165,11 @@ const Index = () => {
 
           <div className="max-w-2xl mx-auto">
             <GoogleBusinessEmbed 
-              businessName="Erika Robinson - Wholesale Mortgage Broker"
+              businessName="Mortgage By Design"
               rating={5.0}
               reviewCount={47}
-              businessUrl="https://g.page/your-business-page"
-              placeId="YOUR_GOOGLE_PLACE_ID"
+              businessUrl="https://g.page/mortgage-by-design"
+              placeId="ChIJN1t_tDeuEmsRUsoyG83frY4"
               address="Available Nationwide"
             />
           </div>
@@ -251,7 +251,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/60 font-body text-sm">
-              © {new Date().getFullYear()} Erika Robinson. All rights reserved.
+              © {new Date().getFullYear()} Mortgage By Design. All rights reserved.
             </p>
             <p className="text-primary-foreground/60 font-body text-sm">
               NMLS# 000000
