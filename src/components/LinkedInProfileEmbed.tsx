@@ -1,17 +1,37 @@
-import { LinkedInEmbed } from "react-social-media-embed";
-import { Linkedin, ExternalLink } from "lucide-react";
+import { useEffect } from "react";
+import { Linkedin } from "lucide-react";
 
 interface LinkedInProfileEmbedProps {
-  // Your LinkedIn profile URL - update this with your actual profile
-  profileUrl?: string;
-  // A recent LinkedIn post URL for the embed (required for the embed to work)
-  postUrl?: string;
+  vanity?: string;
+  size?: "medium" | "large";
+  theme?: "light" | "dark";
+  type?: "VERTICAL" | "HORIZONTAL";
 }
 
 const LinkedInProfileEmbed = ({ 
-  profileUrl = "https://www.linkedin.com/in/erikalynne1093",
-  postUrl = "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7280987542972141569"
+  vanity = "erikalynne1093",
+  size = "large",
+  theme = "light",
+  type = "HORIZONTAL"
 }: LinkedInProfileEmbedProps) => {
+  useEffect(() => {
+    // Load LinkedIn badge script
+    const existingScript = document.querySelector('script[src="https://platform.linkedin.com/badges/js/profile.js"]');
+    
+    if (!existingScript) {
+      const script = document.createElement("script");
+      script.src = "https://platform.linkedin.com/badges/js/profile.js";
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+
+    // Re-render badges if script already loaded
+    if ((window as any).LI) {
+      (window as any).LI.renderAll();
+    }
+  }, [vanity]);
+
   return (
     <div className="bg-card rounded-sm shadow-elegant overflow-hidden">
       {/* Profile Header */}
@@ -22,26 +42,24 @@ const LinkedInProfileEmbed = ({
         </div>
       </div>
       
-      {/* Embed Container */}
-      <div className="p-4 bg-white">
-        <LinkedInEmbed 
-          url={postUrl}
-          width="100%"
-          height={500}
-        />
-      </div>
-      
-      {/* View Full Profile Link */}
-      <div className="px-6 py-4 bg-muted/30 border-t border-border">
-        <a
-          href={profileUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-[#0A66C2] hover:text-[#004182] font-body font-medium transition-colors"
+      {/* LinkedIn Badge Container */}
+      <div className="p-6 bg-white flex justify-center">
+        <div 
+          className="badge-base LI-profile-badge" 
+          data-locale="en_US" 
+          data-size={size} 
+          data-theme={theme} 
+          data-type={type} 
+          data-vanity={vanity} 
+          data-version="v1"
         >
-          View Full Profile
-          <ExternalLink className="w-4 h-4" />
-        </a>
+          <a 
+            className="badge-base__link LI-simple-link" 
+            href={`https://www.linkedin.com/in/${vanity}?trk=profile-badge`}
+          >
+            View LinkedIn Profile
+          </a>
+        </div>
       </div>
     </div>
   );
