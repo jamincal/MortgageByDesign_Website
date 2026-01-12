@@ -76,9 +76,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-16 items-start">
             {/* LinkedIn Profile Embed */}
             <div className="relative">
-            <LinkedInProfileEmbed 
-              profileUrl="https://www.linkedin.com/in/erikalynne1093"
-            />
+            <LinkedInProfileEmbed vanity="erikalynne1093" />
               {/* Decorative Element */}
               <div className="absolute -bottom-6 -right-6 w-48 h-48 border-2 border-gold/30 rounded-sm -z-10" />
             </div>
