@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Set the base URL to your repository name
+  base: "/MortgageByDesign_Website/", 
+
   server: {
     host: "::",
     port: 8080,
