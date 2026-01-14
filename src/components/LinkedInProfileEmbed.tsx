@@ -3,14 +3,13 @@ const LinkedInProfileEmbed = () => {
     <div
       className="badge-base LI-profile-badge"
       data-locale="en_US"
-      data-size="medium" // Set size to medium (or large, etc.)
+      data-size="large" 
       data-theme="light"
-      data-type="VERTICAL" // Set type to VERTICAL (or HORIZONTAL)
-      data-vanity="erikalynne1093" // Use the correct vanity name
+      data-type="VERTICAL" 
+      data-vanity="erikalynne1093" 
       data-version="v1"
     >
-      {/* Updated the href to the correct, full URL format */}
-      <a className="badge-base__link LI-simple-link" href="www.linkedin.com">
+      <a className="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/erikalynne1093?trk=profile-badge">
         Erika Robinson
       </a>
     </div>
