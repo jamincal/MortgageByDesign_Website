@@ -13,13 +13,13 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* The basename must match your repo name exactly */}
+      <BrowserRouter basename="/MortgageByDesign_Website">
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      <BrowserRouter basename="/MortgageByDesign_Website">
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
