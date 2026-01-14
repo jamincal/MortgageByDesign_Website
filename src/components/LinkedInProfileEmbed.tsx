@@ -8,10 +8,22 @@ const LinkedInProfileEmbed = ({ vanity = "erikalynne1093" }: LinkedInProfileEmbe
   const [showFallback, setShowFallback] = useState(false);
 
   useEffect(() => {
-    // If the badge script (in index.html) can’t run inside the preview iframe,
-    // the badge will stay unrendered. After a short delay, show a fallback link.
-    const t = window.setTimeout(() => setShowFallback(true), 1500);
-    return () => window.clearTimeout(t);
+    // Check if the LinkedIn badge script function exists on the window object
+    if (window.IN && window.IN.ENV && window.IN.ENV.js) {
+      try {
+        // Force the LinkedIn script to re-process the DOM for new badges
+        window.IN.parse(); 
+        // If successful, hide the fallback text
+        setShowFallback(false);
+      } catch (e) {
+        // Fallback if the script is present but parsing fails
+        setShowFallback(true);
+      }
+    } else {
+      // If the script isn't loaded at all, show the fallback after a delay
+      const t = window.setTimeout(() => setShowFallback(true), 1500);
+      return () => window.clearTimeout(t);
+    }
   }, []);
 
   return (
@@ -45,3 +57,10 @@ const LinkedInProfileEmbed = ({ vanity = "erikalynne1093" }: LinkedInProfileEmbe
 };
 
 export default LinkedInProfileEmbed;
+
+// Declare the external LinkedIn object so TypeScript knows it exists
+declare global {
+  interface Window {
+    IN: any;
+  }
+}
