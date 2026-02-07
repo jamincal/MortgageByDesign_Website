@@ -3,13 +3,15 @@ type LinkedInProfileEmbedProps = {
   name?: string;
   locale?: string;
   theme?: "light" | "dark";
+  type?: "VERTICAL" | "HORIZONTAL";
 };
 
 const LinkedInProfileEmbed = ({
   vanity,
-  name = "View LinkedIn Profile",
+  name = "Erika Robinson",
   locale = "en_US",
   theme = "light",
+  type = "HORIZONTAL",
 }: LinkedInProfileEmbedProps) => {
   return (
     <div
@@ -17,7 +19,7 @@ const LinkedInProfileEmbed = ({
       data-locale={locale}
       data-size="large"
       data-theme={theme}
-      data-type="VERTICAL"
+      data-type={type}
       data-vanity={vanity}
       data-version="v1"
     >
