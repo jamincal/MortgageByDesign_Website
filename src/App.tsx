@@ -13,8 +13,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {/* The basename must match your repo name exactly */}
-      <BrowserRouter basename="/MortgageByDesign_Website">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />
