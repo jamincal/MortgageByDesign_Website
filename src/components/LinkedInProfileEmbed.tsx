@@ -1,19 +1,35 @@
-const LinkedInProfileEmbed = () => {
+type LinkedInProfileEmbedProps = {
+  vanity: string;
+  name?: string;
+  locale?: string;
+  theme?: "light" | "dark";
+};
+
+const LinkedInProfileEmbed = ({
+  vanity,
+  name = "View LinkedIn Profile",
+  locale = "en_US",
+  theme = "light",
+}: LinkedInProfileEmbedProps) => {
   return (
     <div
       className="badge-base LI-profile-badge"
-      data-locale="en_US"
-      data-size="large" 
-      data-theme="light"
-      data-type="VERTICAL" 
-      data-vanity="erikalynne1093" 
+      data-locale={locale}
+      data-size="large"
+      data-theme={theme}
+      data-type="VERTICAL"
+      data-vanity={vanity}
       data-version="v1"
     >
-      <a className="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/erikalynne1093?trk=profile-badge">
-        Erika Robinson
+      <a
+        className="badge-base__link LI-simple-link"
+        href={`https://www.linkedin.com/in/${vanity}?trk=profile-badge`}
+      >
+        {name}
       </a>
     </div>
   );
 };
 
 export default LinkedInProfileEmbed;
+
