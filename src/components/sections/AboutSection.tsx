@@ -1,4 +1,4 @@
-import LinkedInProfileEmbed from "@/components/LinkedInProfileEmbed";
+import ProfileCard from "@/components/ProfileCard";
 
 const AboutSection = () => {
   return (
@@ -39,12 +39,9 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* LinkedIn Badge */}
+          {/* Profile Card */}
           <div className="md:col-span-2 relative md:sticky md:top-8">
-            <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-4">
-              Connect on LinkedIn
-            </p>
-            <LinkedInProfileEmbed vanity="erikalynne" />
+            <ProfileCard />
             <div className="absolute -bottom-6 -right-6 w-48 h-48 border-2 border-gold/30 rounded-sm -z-10" />
           </div>
         </div>
