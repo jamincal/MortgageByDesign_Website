@@ -12,11 +12,11 @@
            Z"
         fill="hsl(200, 75%, 60%)" />
   <!-- Cursive connected ER monogram, white -->
-  <text x="256" y="380"
+  <text x="256" y="370"
         font-family="'Brush Script MT', 'Lucida Handwriting', 'Segoe Script', cursive"
         font-style="italic"
         font-weight="400"
-        font-size="360"
+        font-size="300"
         text-anchor="middle"
         fill="#ffffff">ℰℛ</text>
 </svg>
