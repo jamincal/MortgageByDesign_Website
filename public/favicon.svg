@@ -1,4 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style type="text/css"><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+      .mono {
+        font-family: 'Great Vibes', 'Allura', 'Pinyon Script', cursive;
+        font-weight: 400;
+        font-size: 360px;
+        fill: #000000;
+      }
+    ]]></style>
+  </defs>
   <!-- House with chimney on right side of roof, stretched to bottom edge -->
   <path d="M256 8
            L40 200
@@ -10,13 +21,10 @@
            L360 70
            L360 100
            Z"
-        fill="hsl(215, 50%, 22%)" />
-  <!-- Cursive connected ER monogram, white -->
-  <text x="256" y="370"
-        font-family="'Brush Script MT', 'Lucida Handwriting', 'Segoe Script', cursive"
-        font-style="italic"
-        font-weight="400"
-        font-size="300"
-        text-anchor="middle"
-        fill="#ffffff">ℰℛ</text>
+        fill="#ffffff"
+        stroke="hsl(215, 50%, 22%)"
+        stroke-width="14"
+        stroke-linejoin="round" />
+  <!-- Cursive connected ER monogram, black, letters touching -->
+  <text x="256" y="395" text-anchor="middle" class="mono" letter-spacing="-30">ER</text>
 </svg>
