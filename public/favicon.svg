@@ -1,21 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- House: roof triangle + body, stretched to bottom edge, no chimney for clarity at favicon size -->
-  <path d="M256 8 L40 200 L40 504 L472 504 L472 200 Z"
+  <!-- House with chimney on right side of roof, stretched to bottom edge -->
+  <path d="M256 8
+           L40 200
+           L40 504
+           L472 504
+           L472 200
+           L400 136
+           L400 70
+           L360 70
+           L360 100
+           Z"
         fill="hsl(200, 75%, 60%)" />
-  <!-- E in roof area, higher and slightly left -->
-  <text x="256" y="215"
-        font-family="Cormorant Garamond, Georgia, serif"
-        font-weight="700"
+  <!-- Cursive connected ER monogram, white -->
+  <text x="256" y="380"
+        font-family="'Brush Script MT', 'Lucida Handwriting', 'Segoe Script', cursive"
         font-style="italic"
-        font-size="220"
+        font-weight="400"
+        font-size="360"
         text-anchor="middle"
-        fill="#ffffff">E</text>
-  <!-- R in body, lower and slightly right -->
-  <text x="256" y="445"
-        font-family="Cormorant Garamond, Georgia, serif"
-        font-weight="700"
-        font-style="italic"
-        font-size="260"
-        text-anchor="middle"
-        fill="#ffffff">R</text>
+        fill="#ffffff">ℰℛ</text>
 </svg>
