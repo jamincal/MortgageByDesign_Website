@@ -8,6 +8,12 @@ const phoenixDate = (dateStr: string) => {
 
 const testimonials: Testimonial[] = [
   {
+    author: "Jim Kenyon",
+    text: "Erika made the entire process seem simple, relaxed and quick. If you want effortless Erika is the best.",
+    url: "https://maps.app.goo.gl/BefUK1yixeEYWSfY8",
+    date: phoenixDate("2026-02-13T09:04:00-07:00"), // 9:04 AM MST = UTC-7
+  },
+  {
     author: "Antonio Pandolfi",
     text: "Moving and purchasing a home are very stressful times. Things can become overwhelming, especially when life also happens. Erika Robinson made the entire mortgage process incredibly easy and stress-free. She was always responsive, explained everything clearly, and stayed on top of every detail from start to finish. What could have been an overwhelming process felt smooth and manageable because of her professionalism and guidance. I couldn't have asked for a better experience and would highly recommend her to anyone looking for a mortgage professional who truly knows what they're doing.",
     url: "https://maps.app.goo.gl/BefUK1yixeEYWSfY8",
