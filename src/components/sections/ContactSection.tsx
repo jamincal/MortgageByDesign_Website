@@ -31,7 +31,7 @@ const ContactSection = () => {
             <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-4">
               Get in Touch
             </p>
-            <h2 className="font-heading text-4xl md:text-5xl text-foreground font-semibold mb-4">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-foreground font-semibold mb-4">
               Let's design your mortgage
             </h2>
             <p className="text-muted-foreground font-body max-w-xl mx-auto">
