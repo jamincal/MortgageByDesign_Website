@@ -15,6 +15,8 @@ const availableStates = [
   "Connecticut",
   "Delaware",
   "Idaho",
+  "Michigan",
+  "Minnesota",
   "Montana",
   "Nebraska",
   "Texas",
