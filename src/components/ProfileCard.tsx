@@ -1,12 +1,17 @@
-import { Linkedin, MapPin, Briefcase, ExternalLink } from "lucide-react";
+import { Linkedin, Instagram, Facebook, MapPin, Briefcase, Phone } from "lucide-react";
 import erikaPhoto from "@/assets/erika-linkedin.jpg";
+import bannerBg from "@/assets/linkedin-banner-bg.jpg";
+import adaxaLogo from "@/assets/adaxa-logo.jpg";
 
 interface ProfileCardProps {
   name?: string;
   title?: string;
   company?: string;
   location?: string;
+  phone?: string;
   linkedinUrl?: string;
+  instagramUrl?: string;
+  facebookUrl?: string;
   tagline?: string;
 }
 
@@ -15,14 +20,28 @@ const ProfileCard = ({
   title = "Wholesale Mortgage Broker",
   company = "Mortgage by Design LLC",
   location = "Phoenix, Arizona",
+  phone = "(623) 363-1093",
   linkedinUrl = "https://www.linkedin.com/in/erikalynne/",
-  tagline = "Mortgages, by design — not by default.",
+  instagramUrl = "https://www.instagram.com/mortgagebydesign1093/",
+  facebookUrl = "https://www.facebook.com/profile.php?id=61576985290597",
+  tagline = "Mortgages, by design, not by default.",
 }: ProfileCardProps) => {
   return (
     <article className="bg-card rounded-sm shadow-elegant overflow-hidden border border-border">
-      {/* Navy banner */}
-      <div className="relative h-40 md:h-48 bg-gradient-to-br from-primary via-navy-light to-primary">
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--gold))_0%,transparent_60%)]" />
+      {/* Banner with logo */}
+      <div
+        className="relative h-40 md:h-48 bg-cover bg-center"
+        style={{ backgroundImage: `url(${bannerBg})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/40 to-accent/30" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img
+            src={adaxaLogo}
+            alt="Adaxa Home"
+            loading="lazy"
+            className="h-20 md:h-24 w-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
+          />
+        </div>
       </div>
 
       {/* Photo */}
@@ -30,11 +49,11 @@ const ProfileCard = ({
         <div className="relative inline-block">
           <img
             src={erikaPhoto}
-            alt={`${name} — ${title}`}
+            alt={`${name}, ${title}`}
             loading="lazy"
             className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover object-top border-4 border-card shadow-card"
           />
-          <span className="absolute bottom-3 right-3 w-6 h-6 rounded-full bg-gold border-2 border-card" />
+          <span className="absolute bottom-3 right-3 w-6 h-6 rounded-full bg-accent border-2 border-card" />
         </div>
       </div>
 
@@ -48,12 +67,18 @@ const ProfileCard = ({
 
         <div className="mt-5 space-y-2 text-sm font-body text-muted-foreground">
           <div className="flex items-center gap-2">
-            <Briefcase className="w-4 h-4 text-gold" />
+            <Briefcase className="w-4 h-4 text-accent" />
             <span>{company}</span>
           </div>
           <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4 text-gold" />
+            <MapPin className="w-4 h-4 text-accent" />
             <span>{location}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Phone className="w-4 h-4 text-accent" />
+            <a href={`tel:${phone.replace(/[^0-9+]/g, "")}`} className="hover:text-accent transition-colors">
+              {phone}
+            </a>
           </div>
         </div>
 
@@ -73,17 +98,39 @@ const ProfileCard = ({
           </div>
         </div>
 
-        {/* CTA */}
-        <a
-          href={linkedinUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center justify-center gap-2 w-full bg-[#0A66C2] hover:bg-[#004182] text-primary-foreground font-body font-medium py-3 rounded-sm transition-colors"
-        >
-          <Linkedin className="w-4 h-4" />
-          Connect on LinkedIn
-          <ExternalLink className="w-3.5 h-3.5 opacity-70" />
-        </a>
+        {/* Social CTAs */}
+        <div className="mt-6 grid grid-cols-3 gap-2">
+          <a
+            href={linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Connect on LinkedIn"
+            className="inline-flex items-center justify-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white font-body font-medium py-3 rounded-sm transition-colors"
+          >
+            <Linkedin className="w-4 h-4" />
+            <span className="text-sm hidden sm:inline">LinkedIn</span>
+          </a>
+          <a
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow on Instagram"
+            className="inline-flex items-center justify-center gap-2 bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] hover:opacity-90 text-white font-body font-medium py-3 rounded-sm transition-opacity"
+          >
+            <Instagram className="w-4 h-4" />
+            <span className="text-sm hidden sm:inline">Instagram</span>
+          </a>
+          <a
+            href={facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow on Facebook"
+            className="inline-flex items-center justify-center gap-2 bg-[#1877F2] hover:bg-[#0E5FCC] text-white font-body font-medium py-3 rounded-sm transition-colors"
+          >
+            <Facebook className="w-4 h-4" />
+            <span className="text-sm hidden sm:inline">Facebook</span>
+          </a>
+        </div>
       </div>
     </article>
   );

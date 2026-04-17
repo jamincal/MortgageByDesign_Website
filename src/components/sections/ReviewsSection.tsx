@@ -6,11 +6,14 @@ const ReviewsSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-4">
-            Client Reviews
+            Testimonials
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl text-foreground font-semibold">
-            What clients are saying
+          <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl text-foreground font-semibold">
+            Client Reviews
           </h2>
+          <p className="font-heading italic text-xl md:text-2xl text-muted-foreground mt-3">
+            What clients are saying
+          </p>
         </div>
 
         <div className="max-w-2xl mx-auto">
