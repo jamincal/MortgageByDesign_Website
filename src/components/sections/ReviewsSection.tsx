@@ -8,6 +8,12 @@ const phoenixDate = (dateStr: string) => {
 
 const testimonials: Testimonial[] = [
   {
+    author: "Jim Ball",
+    text: "Erika and Brandon are a great team. They stay on top of everything and explain the steps and procedures very well.\nI will definitely use them again and I recommend you do too!",
+    url: "https://maps.app.goo.gl/MMjcaLEzr78iSDNP8",
+    date: phoenixDate("2026-01-16T21:28:00-07:00"),
+  },
+  {
     author: "Jeanette Wong",
     text: "Erika Robinson was wonderful throughout our loan process. Every loan comes with its own unique obstacles, but Erika closed out our loan in 12 business days, while juggling the pre-holiday season. She is responsive and will send frequent morning updates, in the manner that makes you believe—your case is the first thing on her mind. She is professional, with a balance of interpersonal, and based on our conversations, I believe she can relate to any client's walk of life. Our family are likely customers for the duration of her mortgage broker career.",
     url: "https://maps.app.goo.gl/7rvXEiu13cMDW6ep7",
