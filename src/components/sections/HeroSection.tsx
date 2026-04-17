@@ -30,7 +30,7 @@ const HeroSection = () => {
             Erika Robinson
           </h1>
           <p
-            className="font-heading italic text-gold-light text-2xl md:text-3xl mb-4 opacity-0 animate-fade-in"
+            className="font-heading italic text-accent-foreground text-2xl md:text-3xl mb-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.55s" }}
           >
             Mortgages, by design, not by default.
