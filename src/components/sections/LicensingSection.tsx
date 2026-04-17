@@ -73,7 +73,7 @@ const LicensingSection = () => {
               Available on Request
             </p>
             <h3 className="font-heading text-2xl text-foreground font-semibold mb-4">
-              7 More States
+              9 More States
             </h3>
             <p className="text-muted-foreground font-body text-sm mb-3 italic">
               Through Adaxa Home — I can get licensed quickly when business calls for it.
