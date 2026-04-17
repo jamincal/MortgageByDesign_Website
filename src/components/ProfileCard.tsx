@@ -21,25 +21,25 @@ const ProfileCard = ({
   return (
     <article className="bg-card rounded-sm shadow-elegant overflow-hidden border border-border">
       {/* Navy banner */}
-      <div className="relative h-32 bg-gradient-to-br from-primary via-navy-light to-primary">
+      <div className="relative h-40 md:h-48 bg-gradient-to-br from-primary via-navy-light to-primary">
         <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--gold))_0%,transparent_60%)]" />
       </div>
 
       {/* Photo */}
-      <div className="px-6 -mt-20 mb-4">
+      <div className="px-8 -mt-28 mb-4">
         <div className="relative inline-block">
           <img
             src={erikaPhoto}
             alt={`${name} — ${title}`}
             loading="lazy"
-            className="w-36 h-36 md:w-40 md:h-40 rounded-full object-cover border-4 border-card shadow-card"
+            className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover object-top border-4 border-card shadow-card"
           />
-          <span className="absolute bottom-2 right-2 w-5 h-5 rounded-full bg-gold border-2 border-card" />
+          <span className="absolute bottom-3 right-3 w-6 h-6 rounded-full bg-gold border-2 border-card" />
         </div>
       </div>
 
       {/* Identity */}
-      <div className="px-6 pb-6">
+      <div className="px-8 pb-8">
         <h3 className="font-heading text-3xl text-foreground font-semibold leading-tight">
           {name}
         </h3>
