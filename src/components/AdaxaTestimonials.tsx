@@ -5,12 +5,26 @@ export interface Testimonial {
   author: string;
   text: string;
   url: string;
+  date?: string; // ISO date string
 }
 
 interface AdaxaTestimonialsProps {
   testimonials: Testimonial[];
   brandUrl?: string;
 }
+
+// Format date in Phoenix time (MST/MDT)
+const formatPhoenixDate = (dateString?: string) => {
+  if (!dateString) return null;
+  
+  const date = new Date(dateString);
+  return date.toLocaleString("en-US", {
+    timeZone: "America/Phoenix",
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+};
 
 const AdaxaTestimonials = ({
   testimonials,
@@ -70,13 +84,20 @@ const AdaxaTestimonials = ({
                   <p className="font-heading text-lg text-foreground leading-tight truncate">
                     {review.author}
                   </p>
-                  <div className="flex items-center gap-0.5 mt-0.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-3.5 h-3.5 text-gold fill-gold"
-                      />
-                    ))}
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <div className="flex items-center gap-0.5">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="w-3.5 h-3.5 text-gold fill-gold"
+                        />
+                      ))}
+                    </div>
+                    {review.date && (
+                      <span className="text-xs text-muted-foreground font-body ml-1">
+                        • {formatPhoenixDate(review.date)}
+                      </span>
+                    )}
                   </div>
                 </div>
               </header>
