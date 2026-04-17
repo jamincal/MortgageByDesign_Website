@@ -70,22 +70,27 @@ const ServicesSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product, index) => (
-            <div
-              key={index}
-              className="bg-card p-8 rounded-sm shadow-elegant hover:shadow-card transition-all duration-300 group border border-transparent hover:border-gold/30"
-            >
-              <div className="w-12 h-12 bg-gold/10 rounded-sm flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors">
-                <product.icon className="w-6 h-6 text-gold" />
+          {products.map((product, index) => {
+            const isLast = index === products.length - 1;
+            return (
+              <div
+                key={index}
+                className={`bg-card p-8 rounded-sm shadow-elegant hover:shadow-card transition-all duration-300 group border border-transparent hover:border-gold/30 ${
+                  isLast ? "lg:col-start-2" : ""
+                }`}
+              >
+                <div className="w-12 h-12 bg-gold/10 rounded-sm flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors">
+                  <product.icon className="w-6 h-6 text-gold" />
+                </div>
+                <h3 className="font-heading text-2xl text-foreground font-semibold mb-3 leading-tight">
+                  {product.title}
+                </h3>
+                <p className="text-muted-foreground font-body leading-relaxed text-sm">
+                  {product.description}
+                </p>
               </div>
-              <h3 className="font-heading text-2xl text-foreground font-semibold mb-3 leading-tight">
-                {product.title}
-              </h3>
-              <p className="text-muted-foreground font-body leading-relaxed text-sm">
-                {product.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
