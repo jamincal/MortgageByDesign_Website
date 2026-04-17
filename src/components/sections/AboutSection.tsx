@@ -4,9 +4,9 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-5 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Bio */}
-          <div className="md:col-span-3">
+          <div>
             <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-4">
               Meet Erika
             </p>
@@ -40,7 +40,7 @@ const AboutSection = () => {
           </div>
 
           {/* Profile Card */}
-          <div className="md:col-span-2 relative md:sticky md:top-8">
+          <div className="relative md:sticky md:top-8">
             <ProfileCard />
             <div className="absolute -bottom-6 -right-6 w-48 h-48 border-2 border-gold/30 rounded-sm -z-10" />
           </div>
