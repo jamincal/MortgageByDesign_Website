@@ -4,7 +4,7 @@ const testimonials: Testimonial[] = [
   {
     author: "Beth Chitwood",
     text: "Erika was so personable and easy to work with. I appreciate that she explained things step by step and I felt totally comfortable asking her any questions that came up. She really went above and beyond working untraditional hours to meet our busy schedules.",
-    url: "https://www.google.com/maps/reviews/@36.6993761,-102.41164,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2twd2F6VklYMkZGZFVJd2JUUnRSME5yYlVkNGNuYxAB!2m1!1s0x0:0x9a12cd5799563bf0",
+    url: "https://maps.app.goo.gl/Q5JaBHbBXjdzyngKA",
   },
   {
     author: "Trent Beaver",
