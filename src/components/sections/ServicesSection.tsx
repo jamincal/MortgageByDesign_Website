@@ -13,7 +13,7 @@ const products = [
     icon: Home,
     title: "Conventional, FHA, VA & Jumbo Loans",
     description:
-      "A full range of traditional home loan options to fit different financial situations. First-time buyer, veteran, luxury upgrade, or low-down-payment — I'll help you choose the loan that fits your goals.",
+      "A full range of traditional home loan options to fit different financial situations. First-time buyer, veteran, luxury upgrade, or low-down-payment, I'll help you choose the loan that fits your goals.",
   },
   {
     icon: RefreshCw,
@@ -25,7 +25,7 @@ const products = [
     icon: Wallet,
     title: "HELOANs & HELOCs",
     description:
-      "Home Equity Loans and Lines of Credit let you tap your equity without refinancing your first mortgage — great for renovations, debt consolidation, or financial flexibility, often with faster closings.",
+      "Home Equity Loans and Lines of Credit let you tap your equity without refinancing your first mortgage, great for renovations, debt consolidation, or financial flexibility, often with faster closings.",
   },
   {
     icon: Building2,
@@ -43,13 +43,13 @@ const products = [
     icon: Building,
     title: "Commercial Loans",
     description:
-      "Financing for business owners and investors purchasing or refinancing income-producing properties — office, retail, industrial, and mixed-use — structured around cash flow, performance, and long-term goals.",
+      "Financing for business owners and investors purchasing or refinancing income-producing properties, office, retail, industrial, and mixed-use, structured around cash flow, performance, and long-term goals.",
   },
   {
     icon: Zap,
     title: "Hard Money Options (When Needed)",
     description:
-      "For time-sensitive deals or unique scenarios, hard money loans provide fast funding and flexibility. Strategic tools — not long-term solutions — recommended only when they truly make sense.",
+      "For time-sensitive deals or unique scenarios, hard money loans provide fast funding and flexibility. Strategic tools, not long-term solutions, recommended only when they truly make sense.",
   },
 ];
 
@@ -59,13 +59,16 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-4">
-            Loan Products
+            What I Offer
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl text-foreground font-semibold">
-            Solutions tailored to your situation
+          <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl text-foreground font-semibold">
+            Loan Products
           </h2>
-          <p className="text-muted-foreground font-body mt-4">
-            From first homes to investment portfolios — and every scenario in between.
+          <p className="font-heading italic text-xl md:text-2xl text-muted-foreground mt-3">
+            Solutions tailored to your situation
+          </p>
+          <p className="text-muted-foreground font-body mt-4 text-sm">
+            From first homes to investment portfolios, and every scenario in between.
           </p>
         </div>
 

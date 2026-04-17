@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 py-20">
         <div className="max-w-3xl">
           <p
-            className="text-gold font-body text-sm tracking-[0.3em] uppercase mb-4 opacity-0 animate-fade-in"
+            className="text-gold font-body text-base md:text-lg tracking-[0.4em] uppercase mb-6 opacity-0 animate-fade-in font-medium"
             style={{ animationDelay: "0.2s" }}
           >
             Mortgage By Design
@@ -33,7 +33,7 @@ const HeroSection = () => {
             className="font-heading italic text-gold-light text-2xl md:text-3xl mb-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.55s" }}
           >
-            Mortgages, by design — not by default.
+            Mortgages, by design, not by default.
           </p>
           <p
             className="text-primary-foreground/80 font-body text-lg md:text-xl max-w-xl mb-8 opacity-0 animate-fade-in"
