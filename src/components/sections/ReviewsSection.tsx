@@ -8,6 +8,12 @@ const phoenixDate = (dateStr: string) => {
 
 const testimonials: Testimonial[] = [
   {
+    author: "Ana de la Noval",
+    text: "I could not be happier with the assistance I received from Erika Robinson for my mortgage deal. She is amazingly smart, accessible and delivered exactly on time! Erika was incredibly organized and proactive, helping me get through the application process at lightning speed. I grew to trust her because I believed she truly cared about me and as a single, retired woman, her assistance was not only one I could trust, but very significant to me. She was always available and the deal closed exactly when she predicted it would! Erika, thank you for being such an outstanding, fun broker. Both you and Adaxa are a class act and I highly recommend you to anyone who wants to be treated professionally and exceptionally. Thank you again!",
+    url: "https://maps.app.goo.gl/Rd7eaxtyNuucSi4q8",
+    date: phoenixDate("2025-06-11T14:18:00-07:00"),
+  },
+  {
     author: "Virginia Burzotta",
     text: "Adaxa is one of the best discount brokerage firms I've worked with and I have worked with a lot.\nErika was especially helpful and knowledgeable. She went the extra mile for us. Erika got us the best deal.",
     url: "https://maps.app.goo.gl/cfviC4j66fW58oN69",
