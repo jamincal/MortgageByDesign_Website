@@ -61,7 +61,7 @@ const ServicesSection = () => {
           <p className="text-gold font-body text-sm tracking-[0.2em] uppercase mb-4">
             What I Offer
           </p>
-          <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl text-foreground font-semibold">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-foreground font-semibold">
             Loan Products
           </h2>
           <p className="font-heading italic text-xl md:text-2xl text-muted-foreground mt-3">
