@@ -48,7 +48,7 @@ const HeroSection = () => {
           >
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-primary font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground border border-primary-foreground/30 font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
             >
               Start a Conversation
             </a>
