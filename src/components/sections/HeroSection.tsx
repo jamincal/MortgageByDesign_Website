@@ -58,6 +58,12 @@ const HeroSection = () => {
             >
               Explore Loan Products
             </a>
+            <a
+              href="#testimonials"
+              className="inline-flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-body font-medium px-8 py-4 rounded-sm transition-all duration-300"
+            >
+              Client Testimonials
+            </a>
           </div>
         </div>
       </div>
