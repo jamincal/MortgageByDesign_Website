@@ -64,6 +64,14 @@ const HeroSection = () => {
             >
               Client Testimonials
             </a>
+            <a
+              href="https://prod.lendingpad.com/adaxa-home/pos#/?loid=df32f9ee-8592-4dfa-8c4a-d22ff1aca52c"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground border border-primary-foreground/30 font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
+            >
+              Apply Here
+            </a>
           </div>
         </div>
       </div>
