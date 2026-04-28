@@ -24,7 +24,7 @@
     --muted: 210 30% 95%;
     --muted-foreground: 215 20% 42%;
 
-    --accent: 200 75% 48%;
+    --accent: 178 78% 38%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,13 +32,13 @@
 
     --border: 210 25% 86%;
     --input: 210 25% 86%;
-    --ring: 200 75% 48%;
+    --ring: 178 78% 38%;
 
     --radius: 0.5rem;
 
-    /* Custom tokens — cool blue palette */
-    --gold: 200 75% 48%;
-    --gold-light: 195 70% 65%;
+    /* Custom tokens — teal palette */
+    --gold: 178 78% 38%;
+    --gold-light: 174 72% 56%;
     --navy: 215 50% 22%;
     --navy-light: 215 35% 38%;
     --cream: 210 40% 98%;
