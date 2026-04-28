@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 py-20">
         <div className="max-w-3xl">
           <p
-            className="text-gold font-body text-xl md:text-3xl lg:text-4xl tracking-[0.4em] uppercase mb-6 opacity-0 animate-fade-in font-bold"
+            className="text-gold font-body text-xl md:text-3xl lg:text-4xl tracking-[0.4em] uppercase mb-6 opacity-0 animate-fade-in font-bold whitespace-nowrap"
             style={{ animationDelay: "0.2s" }}
           >
             Mortgage by Design, LLC
