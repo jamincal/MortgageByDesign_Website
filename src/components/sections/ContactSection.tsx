@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 const contacts = [
   {
     icon: Phone,
-    label: "Phone",
+    label: "Personal Cell",
     value: "(623) 363-1093",
     href: "tel:+16233631093",
   },
