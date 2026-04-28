@@ -9,6 +9,12 @@ const contacts = [
     href: "tel:+16233631093",
   },
   {
+    icon: Phone,
+    label: "Business Cell",
+    value: "(602) 688-0349",
+    href: "tel:+16026880349",
+  },
+  {
     icon: Mail,
     label: "Email",
     value: "erobinson@adaxahome.com",

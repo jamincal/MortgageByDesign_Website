@@ -80,6 +80,12 @@ const ProfileCard = ({
               Personal Cell: {phone}
             </a>
           </div>
+          <div className="flex items-center gap-2">
+            <Phone className="w-4 h-4 text-accent" />
+            <a href="tel:+16026880349" className="hover:text-accent transition-colors">
+              Business Cell: (602) 688-0349
+            </a>
+          </div>
         </div>
 
         {/* Stats */}
