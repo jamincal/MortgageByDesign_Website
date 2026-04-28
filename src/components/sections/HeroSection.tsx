@@ -21,7 +21,7 @@ const HeroSection = () => {
             className="text-gold font-body text-xl md:text-3xl lg:text-4xl tracking-[0.4em] uppercase mb-6 opacity-0 animate-fade-in font-bold"
             style={{ animationDelay: "0.2s" }}
           >
-            Mortgage By Design
+            Mortgage by Design, LLC
           </p>
           <h1
             className="font-heading text-5xl md:text-7xl lg:text-8xl text-primary-foreground font-semibold leading-tight mb-6 opacity-0 animate-fade-in"
