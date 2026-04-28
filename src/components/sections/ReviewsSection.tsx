@@ -11,7 +11,7 @@ const testimonials: Testimonial[] = [
     author: "Kelly Nine",
     text: "I have worked with Erika Robinson on two occasions now, and I have been extremely happy with her work. She is always very helpful. You can hear the smile in her voice, and she is willing to help you any time off day and even weekends. She is a very valuable asset to Adaxa. I will highly recommend her to anyone needing financial services. Thank you Erika :)",
     url: "https://maps.app.goo.gl/",
-    date: phoenixDate("2026-04-21T12:00:00-07:00"),
+    date: phoenixDate("2026-04-20T13:12:00-07:00"),
   },
   {
     author: "Angel Mason",
