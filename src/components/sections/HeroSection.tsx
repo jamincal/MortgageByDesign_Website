@@ -48,19 +48,19 @@ const HeroSection = () => {
           >
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground border border-primary-foreground/30 font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
+              className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground border border-accent font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
             >
               Start a Conversation
             </a>
             <a
               href="#services"
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground border border-primary-foreground/30 font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
+              className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground border border-accent font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
             >
               Explore Loan Products
             </a>
             <a
               href="#testimonials"
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground border border-primary-foreground/30 font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
+              className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground border border-accent font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
             >
               Client Testimonials
             </a>
@@ -68,7 +68,7 @@ const HeroSection = () => {
               href="https://prod.lendingpad.com/adaxa-home/pos#/?loid=df32f9ee-8592-4dfa-8c4a-d22ff1aca52c"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground border border-primary-foreground/30 font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
+              className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground border border-accent font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
             >
               Apply Here
             </a>
