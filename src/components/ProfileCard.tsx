@@ -77,7 +77,7 @@ const ProfileCard = ({
           <div className="flex items-center gap-2">
             <Phone className="w-4 h-4 text-accent" />
             <a href={`tel:${phone.replace(/[^0-9+]/g, "")}`} className="hover:text-accent transition-colors">
-              {phone}
+              Personal Cell: {phone}
             </a>
           </div>
         </div>
