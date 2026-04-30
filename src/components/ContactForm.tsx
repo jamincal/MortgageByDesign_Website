@@ -25,10 +25,20 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      const { data, error } = await supabase.functions.invoke(
-        "send-contact-email",
+      const { error } = await supabase.functions.invoke(
+        "send-transactional-email",
         {
-          body: formData,
+          body: {
+            templateName: "contact-form-notification",
+            recipientEmail: "erobinson@adaxahome.com",
+            idempotencyKey: `contact-${crypto.randomUUID()}`,
+            templateData: {
+              name: formData.name,
+              email: formData.email,
+              phone: formData.phone,
+              message: formData.message,
+            },
+          },
         }
       );
 
