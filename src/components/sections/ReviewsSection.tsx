@@ -8,6 +8,12 @@ const phoenixDate = (dateStr: string) => {
 
 const testimonials: Testimonial[] = [
   {
+    author: "Skip",
+    text: "Erika was excellent to work with. Great and timely communication, very knowledgeable and up to date with facts. Great personality and very thorough through the entire process. Would recommend requesting to work with her. Quick and easy process to the end.",
+    url: "https://maps.app.goo.gl/rJBeBuiQmbSgKDXB7",
+    date: phoenixDate("2026-05-21T12:00:00-07:00"),
+  },
+  {
     author: "Kelly Nine",
     text: "I have worked with Erika Robinson on two occasions now, and I have been extremely happy with her work. She is always very helpful. You can hear the smile in her voice, and she is willing to help you any time off day and even weekends. She is a very valuable asset to Adaxa. I will highly recommend her to anyone needing financial services. Thank you Erika :)",
     url: "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSbFlYVTVSbGt4T0hSWFgxVkhORmR2ZFc0d1VVRRAB!2m1!1s0x0:0x9a12cd5799563bf0!3m1!1s2@1:CAIQACodChtycF9oOkRlYXU5RlkxOHRXX1VHNFdvdW4wUUE%7C%7C",
