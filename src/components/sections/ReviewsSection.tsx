@@ -8,6 +8,12 @@ const phoenixDate = (dateStr: string) => {
 
 const testimonials: Testimonial[] = [
   {
+    author: "Nicole Neufeld",
+    text: "Erika did an excellent job in closing quickly and it was a smooth process! Would definitely recommend!",
+    url: "https://maps.app.goo.gl/BhrAez2PtMLEApT38",
+    date: phoenixDate("2026-08-29T12:00:00-07:00"),
+  },
+  {
     author: "Kat",
     text: "Erika is smart and motivated to get you the best deal. She helps you through the whole process, and will calm your nerves. You will truly appreciate her expertise and experience in this process.",
     url: "https://maps.app.goo.gl/wgFgeepHnhkfqQo77",
