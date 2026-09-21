@@ -23,6 +23,12 @@ const HeroSection = () => {
           >
             Mortgage by Design, LLC
           </p>
+          <p
+            className="text-primary-foreground/90 font-body text-base md:text-lg mb-4 opacity-0 animate-fade-in tracking-wide"
+            style={{ animationDelay: "0.3s" }}
+          >
+            Sponsored by Adaxa Home Loans
+          </p>
           <h1
             className="font-heading text-5xl md:text-7xl lg:text-8xl text-primary-foreground font-semibold leading-tight mb-6 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.4s" }}
