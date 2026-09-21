@@ -19,7 +19,7 @@ const AboutSection = () => {
                 Hi, I'm Erika Robinson, founder of <strong className="text-foreground">Mortgage by Design LLC</strong>.
                 I do mortgages a little differently. As a wholesale mortgage broker, I don't work for a
                 bank, I work for you. Instead of pushing one lender's products, I shop your loan across{" "}
-                <strong className="text-foreground">75+ lenders nationwide</strong> to find the best rate,
+                <strong className="text-foreground">150+ lenders nationwide</strong> to find the best rate,
                 terms, and strategy based on your goals.
               </p>
               <p>

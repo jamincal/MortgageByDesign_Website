@@ -91,7 +91,7 @@ const ProfileCard = ({
         {/* Stats */}
         <div className="grid grid-cols-2 gap-3 mt-6 pt-6 border-t border-border">
           <div>
-            <p className="font-heading text-2xl text-foreground font-semibold">75+</p>
+            <p className="font-heading text-2xl text-foreground font-semibold">150+</p>
             <p className="font-body text-xs uppercase tracking-wider text-muted-foreground">
               Lender Network
             </p>
