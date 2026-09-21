@@ -82,8 +82,8 @@ const ProfileCard = ({
           </div>
           <div className="flex items-center gap-2">
             <Phone className="w-4 h-4 text-accent" />
-            <a href="tel:+16026880349" className="hover:text-accent transition-colors">
-              Business Cell: (602) 688-0349
+            <a href="tel:+13239906680" className="hover:text-accent transition-colors">
+              Business Cell: (323)-990-6680
             </a>
           </div>
         </div>

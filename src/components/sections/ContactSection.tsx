@@ -11,8 +11,8 @@ const contacts = [
   {
     icon: Phone,
     label: "Business Cell",
-    value: "(602) 688-0349",
-    href: "tel:+16026880349",
+    value: "(323)-990-6680",
+    href: "tel:+13239906680",
   },
   {
     icon: Mail,
