@@ -94,6 +94,14 @@ const HeroSection = () => {
             >
               Verify my NMLS ID
             </a>
+            <a
+              href="https://adaxahome.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground border border-accent font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
+            >
+              Adaxa Home Loans Website
+            </a>
           </div>
         </div>
       </div>
