@@ -48,7 +48,7 @@ const ProfileCard = ({
       <div className="px-8 -mt-28 mb-4">
         <div className="relative inline-block">
           <img
-            src={erikaPhoto}
+            src={erikaPhoto.url}
             alt={`${name}, ${title}`}
             loading="lazy"
             className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover object-top border-4 border-card shadow-card"
