@@ -23,7 +23,7 @@ const products = [
   },
   {
     icon: Wallet,
-    title: "HELOANs & HELOCs",
+    title: "HELOANs & HELOCs (2nd Lien Position)",
     description:
       "Home Equity Loans and Lines of Credit let you tap your equity without refinancing your first mortgage, great for renovations, debt consolidation, or financial flexibility, often with faster closings.",
   },
