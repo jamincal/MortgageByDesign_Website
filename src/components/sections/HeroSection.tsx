@@ -53,7 +53,7 @@ const HeroSection = () => {
             className="text-primary-foreground/80 font-body text-lg md:text-xl max-w-xl mb-8 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.7s" }}
           >
-            A wholesale mortgage broker shopping 75+ lenders to find the right loan,
+            A wholesale mortgage broker shopping 150+ lenders to find the right loan,
             rate, and strategy for your bigger financial picture.
           </p>
           <div
