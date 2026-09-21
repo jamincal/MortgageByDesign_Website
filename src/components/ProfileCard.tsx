@@ -1,5 +1,5 @@
 import { Linkedin, Instagram, Facebook, MapPin, Briefcase, Phone } from "lucide-react";
-import erikaPhoto from "@/assets/erika-linkedin.jpg";
+import erikaPhoto from "@/assets/erika-headshot.png.asset.json";
 import bannerBg from "@/assets/linkedin-banner-bg.jpg";
 import adaxaLogo from "@/assets/adaxa-logo.jpg";
 
