@@ -86,6 +86,14 @@ const HeroSection = () => {
             >
               Apply Here
             </a>
+            <a
+              href="https://nmlsconsumeraccess.org/Home.aspx/MainSearch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground border border-accent font-body font-medium px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-card"
+            >
+              Verify my NMLS ID
+            </a>
           </div>
         </div>
       </div>
