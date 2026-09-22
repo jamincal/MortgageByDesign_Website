@@ -17,7 +17,7 @@ interface ProfileCardProps {
 
 const ProfileCard = ({
   name = "Erika Robinson",
-  title = "Wholesale Mortgage Broker",
+  title = "Senior Mortgage Broker",
   company = "Mortgage by Design LLC",
   location = "Phoenix, Arizona",
   phone = "(623) 363-1093",
