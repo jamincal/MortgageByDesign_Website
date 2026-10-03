@@ -8,6 +8,12 @@ const phoenixDate = (dateStr: string) => {
 
 const testimonials: Testimonial[] = [
   {
+    author: "Eric Renney",
+    text: "Erika worked very hard and helped navigate through the process, and I saved thousands at closing. I had talked to multiple brokers and decided to go with her because I saved quite a bit and she knew how to close quickly!\nIf there was a issue she made sure to find out what was going on.",
+    url: "https://maps.app.goo.gl/m6BkKhKYmWD94MJR6",
+    date: phoenixDate("2026-10-01T12:00:00-07:00"),
+  },
+  {
     author: "Kathleen Bartlett",
     text: "I highly recommend Erika Robinson as she truly sets the standard for real estate financing. Throughout the entire process, Erika demonstrated profound market knowledge and strategic awareness, ensuring every detail was perfectly managed. During all of the high stake decisions and minute details, her incredible kindness and grace made a complex journey feel entirely manageable. She operated with remarkable expediency, securing approvals swiftly while maintaining a thoroughly meticulous approach. Her genuine, personal touch turns a standard financial transaction into a supportive partnership. For a personalized stress-free, fast, and expertly guided homebuying experience, look no further than this phenomenal professional! (10/10)",
     url: "https://maps.app.goo.gl/SKtdevMavipMPSmK8",
