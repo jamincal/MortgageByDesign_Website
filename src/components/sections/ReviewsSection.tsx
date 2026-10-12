@@ -1,4 +1,5 @@
 import AdaxaTestimonials, { Testimonial } from "@/components/AdaxaTestimonials";
+import FeaturedReviewsCarousel from "@/components/sections/FeaturedReviewsCarousel";
 
 // Helper to convert dates to Phoenix time (handles CDT/CST conversion)
 const phoenixDate = (dateStr: string) => {
@@ -201,6 +202,8 @@ const ReviewsSection = () => {
             brandUrl="https://adaxahome.com"
           />
         </div>
+
+        <FeaturedReviewsCarousel />
       </div>
     </section>
   );
