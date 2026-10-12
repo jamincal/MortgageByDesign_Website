@@ -11,6 +11,12 @@ export type ExperienceReview = {
 };
 
 export const experienceReviews = reviews as ExperienceReview[];
+
+// Only 5-star reviews, newest first — this is what we publish on the site.
+export const fiveStarReviews = experienceReviews
+  .filter((r) => r.rating >= 5)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
 export const EXPERIENCE_PROFILE_URL = "https://www.experience.com/reviews/erika-robinson-mortgage";
 
 export const formatReviewDate = (iso: string) =>
