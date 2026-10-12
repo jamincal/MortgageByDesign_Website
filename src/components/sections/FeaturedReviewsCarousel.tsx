@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { experienceReviews, ExperienceReviewCard, EXPERIENCE_PROFILE_URL } from "@/components/ExperienceReviews";
+import { fiveStarReviews, ExperienceReviewCard, EXPERIENCE_PROFILE_URL } from "@/components/ExperienceReviews";
 
-const featured = experienceReviews.slice(0, 6);
+const featured = fiveStarReviews.slice(0, 6);
 
 const FeaturedReviewsCarousel = () => (
   <div className="mt-20 max-w-5xl mx-auto">
