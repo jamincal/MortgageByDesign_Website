@@ -47,7 +47,15 @@ export const ExperienceReviewCard = ({ review }: { review: ExperienceReview }) =
       <p className="font-heading text-lg font-semibold text-foreground">{review.author}</p>
       <p className="font-body text-xs text-muted-foreground">
         {review.location && <>{review.location} · </>}
-        {formatReviewDate(review.date)} · Experience.com
+        {formatReviewDate(review.date)} ·{" "}
+        <a
+          href={EXPERIENCE_PROFILE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent hover:underline"
+        >
+          Experience.com
+        </a>
       </p>
     </div>
   </article>
