@@ -11,6 +11,12 @@ export type ExperienceReview = {
 };
 
 export const experienceReviews = reviews as ExperienceReview[];
+
+// Only 5-star reviews, newest first — this is what we publish on the site.
+export const fiveStarReviews = experienceReviews
+  .filter((r) => r.rating >= 5)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
 export const EXPERIENCE_PROFILE_URL = "https://www.experience.com/reviews/erika-robinson-mortgage";
 
 export const formatReviewDate = (iso: string) =>
@@ -41,7 +47,15 @@ export const ExperienceReviewCard = ({ review }: { review: ExperienceReview }) =
       <p className="font-heading text-lg font-semibold text-foreground">{review.author}</p>
       <p className="font-body text-xs text-muted-foreground">
         {review.location && <>{review.location} · </>}
-        {formatReviewDate(review.date)} · Experience.com
+        {formatReviewDate(review.date)} ·{" "}
+        <a
+          href={EXPERIENCE_PROFILE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent hover:underline"
+        >
+          Experience.com
+        </a>
       </p>
     </div>
   </article>
