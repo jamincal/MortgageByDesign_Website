@@ -38,11 +38,17 @@ const HeroSection = () => {
             </a>
           </p>
           <h1
-            className="font-heading text-5xl md:text-7xl lg:text-8xl text-primary-foreground font-semibold leading-tight mb-6 opacity-0 animate-fade-in"
+            className="font-heading text-5xl md:text-7xl lg:text-8xl text-primary-foreground font-semibold leading-tight mb-3 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.4s" }}
           >
             Erika Robinson
           </h1>
+          <p
+            className="font-body uppercase tracking-[0.2em] text-gold text-sm md:text-lg font-medium mb-3 opacity-0 animate-fade-in"
+            style={{ animationDelay: "0.5s" }}
+          >
+            Your Executive Mortgage Broker
+          </p>
           <p
             className="font-heading italic font-bold text-accent text-2xl md:text-3xl mb-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.55s" }}
