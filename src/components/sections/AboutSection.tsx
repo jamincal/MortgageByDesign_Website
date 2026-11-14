@@ -16,25 +16,52 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-5 text-muted-foreground font-body leading-relaxed text-lg">
               <p>
-                Hi, I'm Erika Robinson, founder of <strong className="text-foreground">Mortgage by Design LLC</strong>.
-                I do mortgages a little differently. As a wholesale mortgage broker, I don't work for a
-                bank, I work for you. Instead of pushing one lender's products, I shop your loan across{" "}
-                <strong className="text-foreground">150+ lenders nationwide</strong> to find the best rate,
-                terms, and strategy based on your goals.
+                Hi, I'm Erika Robinson, founder of{" "}
+                <strong className="text-foreground">Mortgage by Design LLC</strong> and
+                an <strong className="text-foreground">Executive Mortgage Broker</strong>{" "}
+                specializing in residential and commercial financing.
               </p>
               <p>
-                Whether you're buying your first home, refinancing to lower your payment, pulling equity to
-                pay off debt, or investing in real estate, my job is to make the process simple, strategic,
-                and stress-free. No cookie-cutter loans here, everything is designed around your bigger
-                financial picture.
+                I do mortgages a little differently. As a wholesale mortgage broker, I
+                don't work for a bank, I work for <strong className="text-foreground">YOU</strong>.
+                Instead of offering one lender's products, I shop your loan across{" "}
+                <strong className="text-foreground">250+ lenders nationwide</strong> to
+                find competitive rates, terms, and financing strategies tailored to your
+                goals.
               </p>
               <p>
-                I'm known for being responsive, honest, and detail-obsessed. I'll walk you through your
-                options, explain the numbers in plain English, and stay in your corner from application
-                to closing, and beyond.
+                Whether you're purchasing your first home, refinancing to lower your
+                payment, tapping into your equity to consolidate debt, or building your
+                real estate investment portfolio, I'm here to make the process simple,
+                strategic, and stress-free.
+              </p>
+              <p>
+                Commercial financing? I've got you covered there, too! I offer commercial
+                purchase loans, rate-and-term refinances, and cash-out refinances across a
+                wide variety of commercial property types. Whether you're purchasing a new
+                investment, refinancing an existing commercial property, or unlocking
+                equity to fund your next opportunity, I'll help you explore financing
+                solutions that make sense for your business and long-term goals.
+              </p>
+              <p>
+                No cookie-cutter loans here. Every financing strategy is designed around
+                your bigger financial picture.
+              </p>
+              <p>
+                I'm known for being responsive, honest, and detail-obsessed. I'll walk you
+                through your options, explain the numbers in plain English, and personally
+                guide you from application to closing, and beyond. But don't just take my
+                word for it! Be sure to read my{" "}
+                <a
+                  href="#testimonials"
+                  className="text-gold underline decoration-gold/40 underline-offset-4 hover:decoration-gold transition-colors"
+                >
+                  client testimonials
+                </a>{" "}
+                to hear firsthand about their personal experiences working with me.
               </p>
               <p className="font-heading italic text-2xl text-foreground pt-2">
-                Better options. Smarter guidance. A broker who actually cares about the outcome.
+                Your property. Your goals. Your mortgage, by design.
               </p>
             </div>
           </div>
