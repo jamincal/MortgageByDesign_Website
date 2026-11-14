@@ -59,9 +59,9 @@ const HeroSection = () => {
             className="text-primary-foreground/80 font-body text-lg md:text-xl max-w-xl mb-8 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.7s" }}
           >
-            Your Executive Wholesale Commercial &amp; Residential mortgage broker
-            shopping 250+ lenders to find the right loan, rate, and strategy for your
-            bigger financial picture.
+            Your Executive Wholesale Commercial &amp; Residential Mortgage Broker,
+            shopping 250+ lenders to find the right loan, rate, and strategy tailored
+            to your bigger financial picture.
           </p>
           <div
             className="flex flex-wrap gap-4 opacity-0 animate-fade-in"
