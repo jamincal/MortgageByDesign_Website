@@ -9,6 +9,12 @@ const phoenixDate = (dateStr: string) => {
 
 const testimonials: Testimonial[] = [
   {
+    author: "Heather Castro",
+    text: "Erika Robinson was great from the start! I had spoken to a few other brokers first, but I felt most comfortable with Erika. She is diligent, hard working, and accommodating. She gave me everything I asked for and more so that I could make an informed decision on my loan. She guided me through the whole process with just the right amount of nudging when needed. And this lady seems to work at all hours! Thanks, Erika!",
+    url: "https://maps.app.goo.gl/TJFRVj74gQg1Cgcs5",
+    date: phoenixDate("2026-11-10T12:00:00-07:00"),
+  },
+  {
     author: "George Oliver Hale",
     text: "Erika Robinson was incredible to work with. Her tenacious, hardworking attitude and deep knowledge of the business and many different lenders made all the difference in getting my loan funded. This was not an easy loan to get across the finish line, but she never gave up. She was easy to talk to, truly understood my situation, and knew exactly how to get the job done. If you need a loan, Erica should be your go-to person. I highly recommend her!",
     url: "https://maps.app.goo.gl/1H1RRJ2pGTgH4kVJA",
