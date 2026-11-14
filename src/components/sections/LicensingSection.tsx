@@ -12,15 +12,35 @@ const activeStates = [
 ];
 
 const availableStates = [
+  "Alabama",
+  "Alaska",
+  "Arkansas",
   "Connecticut",
   "Delaware",
+  "Hawaii",
   "Idaho",
+  "Iowa",
+  "Kansas",
+  "Kentucky",
+  "Louisiana",
+  "Maine",
+  "Maryland",
   "Michigan",
   "Minnesota",
-  "Montana",
+  "Missouri",
   "Nebraska",
+  "New Hampshire",
+  "New Mexico",
+  "North Dakota",
+  "Oklahoma",
+  "South Dakota",
+  "Tennessee",
   "Texas",
+  "Utah",
   "Virginia",
+  "West Virginia",
+  "Wisconsin",
+  "Wyoming",
 ];
 
 const LicensingSection = () => {
@@ -73,7 +93,7 @@ const LicensingSection = () => {
               Available on Request
             </p>
             <h3 className="font-heading text-2xl text-foreground font-semibold mb-4">
-              9 More States
+              29 More States
             </h3>
             <p className="text-muted-foreground font-body text-sm mb-3 italic">
               Through Adaxa Home — I can get licensed quickly when business calls for it.
