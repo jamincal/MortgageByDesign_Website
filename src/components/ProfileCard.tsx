@@ -97,9 +97,8 @@ const ProfileCard = ({
             </p>
           </div>
           <div>
-            <p className="font-heading text-2xl text-foreground font-semibold">50</p>
-            <p className="font-body text-xs uppercase tracking-wider text-muted-foreground">
-              States (DSCR)
+            <p className="font-heading text-xl md:text-2xl text-foreground font-semibold leading-snug">
+              Commercial and Residential
             </p>
           </div>
         </div>
