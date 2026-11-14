@@ -98,10 +98,10 @@ const LicensingSection = () => {
             <p className="text-muted-foreground font-body text-sm mb-3 italic">
               Through Adaxa Home — I can get licensed quickly when business calls for it.
             </p>
-            <ul className="space-y-2 text-muted-foreground font-body text-sm">
+            <ul className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-muted-foreground font-body text-xs">
               {availableStates.map((state) => (
-                <li key={state} className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-muted-foreground/50" />
+                <li key={state} className="flex items-center gap-1.5 truncate">
+                  <span className="w-1 h-1 shrink-0 rounded-full bg-muted-foreground/50" />
                   {state}
                 </li>
               ))}
