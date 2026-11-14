@@ -9,6 +9,12 @@ const phoenixDate = (dateStr: string) => {
 
 const testimonials: Testimonial[] = [
   {
+    author: "Mark Rounsaville",
+    text: "I had an excellent experience refinancing my commercial property. The entire process was prompt, professional, and seamless. Communication was outstanding, and the follow-up was exceptional every step of the way. I truly appreciated the responsiveness, attention to detail, and commitment to making the refinancing process as smooth as possible. I highly recommend their services to anyone looking to refinance commercial property. Outstanding service from start to finish!",
+    url: "https://maps.app.goo.gl/TPboxcybpJPWLAMi6",
+    date: phoenixDate("2026-11-11T12:00:00-07:00"),
+  },
+  {
     author: "Heather Castro",
     text: "Erika Robinson was great from the start! I had spoken to a few other brokers first, but I felt most comfortable with Erika. She is diligent, hard working, and accommodating. She gave me everything I asked for and more so that I could make an informed decision on my loan. She guided me through the whole process with just the right amount of nudging when needed. And this lady seems to work at all hours! Thanks, Erika!",
     url: "https://maps.app.goo.gl/TJFRVj74gQg1Cgcs5",
