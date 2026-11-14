@@ -116,12 +116,13 @@ const LicensingSection = () => {
                 <Globe2 className="w-6 h-6 text-gold" />
               </div>
               <p className="text-gold font-body text-xs tracking-[0.2em] uppercase mb-2">
-                Commercial & Residential DSCR & Investor Loans
+                Commercial & Residential DSCR/Investor Loans
               </p>
               <h3 className="font-heading text-2xl font-semibold mb-4">All 50 States</h3>
               <p className="font-body text-sm text-primary-foreground/80 leading-relaxed">
                 For real estate investors, I can write DSCR loans nationwide — qualified on
-                rental income, not personal income. No state restrictions, no slowdowns.
+                rental income/property cash flow, NOT personal income. No state restrictions,
+                no slowdowns. Closings as quick as 10-14 days.
               </p>
             </div>
           </div>
