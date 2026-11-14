@@ -12,15 +12,35 @@ const activeStates = [
 ];
 
 const availableStates = [
+  "Alabama",
+  "Alaska",
+  "Arkansas",
   "Connecticut",
   "Delaware",
+  "Hawaii",
   "Idaho",
+  "Iowa",
+  "Kansas",
+  "Kentucky",
+  "Louisiana",
+  "Maine",
+  "Maryland",
   "Michigan",
   "Minnesota",
-  "Montana",
+  "Missouri",
   "Nebraska",
+  "New Hampshire",
+  "New Mexico",
+  "North Dakota",
+  "Oklahoma",
+  "South Dakota",
+  "Tennessee",
   "Texas",
+  "Utah",
   "Virginia",
+  "West Virginia",
+  "Wisconsin",
+  "Wyoming",
 ];
 
 const LicensingSection = () => {
@@ -73,15 +93,15 @@ const LicensingSection = () => {
               Available on Request
             </p>
             <h3 className="font-heading text-2xl text-foreground font-semibold mb-4">
-              9 More States
+              29 More States
             </h3>
             <p className="text-muted-foreground font-body text-sm mb-3 italic">
               Through Adaxa Home — I can get licensed quickly when business calls for it.
             </p>
-            <ul className="space-y-2 text-muted-foreground font-body text-sm">
+            <ul className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-muted-foreground font-body text-xs">
               {availableStates.map((state) => (
-                <li key={state} className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-muted-foreground/50" />
+                <li key={state} className="flex items-center gap-1.5 truncate">
+                  <span className="w-1 h-1 shrink-0 rounded-full bg-muted-foreground/50" />
                   {state}
                 </li>
               ))}
