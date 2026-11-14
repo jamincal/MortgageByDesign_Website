@@ -98,7 +98,7 @@ const ProfileCard = ({
           </div>
           <div>
             <p className="font-heading text-xl md:text-2xl text-foreground font-semibold leading-snug">
-              Commercial and Residential Financing
+              Commercial & Residential Financing
             </p>
           </div>
         </div>
