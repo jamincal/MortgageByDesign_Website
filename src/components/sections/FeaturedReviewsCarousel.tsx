@@ -18,8 +18,8 @@ const FeaturedReviewsCarousel = () => (
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="hidden md:flex" />
-      <CarouselNext className="hidden md:flex" />
+      <CarouselPrevious className="hidden md:flex -left-4" />
+      <CarouselNext className="hidden md:flex -right-4" />
     </Carousel>
     <p className="md:hidden text-center text-xs text-muted-foreground mt-3 font-body">Swipe to see more</p>
     <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
