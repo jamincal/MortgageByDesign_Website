@@ -55,20 +55,13 @@ const AdaxaTestimonials = ({
         </span>
       </div>
 
-      {/* Scrollable reviews */}
-      <div className="relative">
-        <div
-          className="max-h-[520px] overflow-y-auto px-6 py-6 space-y-5
-            [&::-webkit-scrollbar]:w-2
-            [&::-webkit-scrollbar-track]:bg-muted/40
-            [&::-webkit-scrollbar-thumb]:bg-gold/50
-            [&::-webkit-scrollbar-thumb]:rounded-full
-            hover:[&::-webkit-scrollbar-thumb]:bg-gold"
-        >
+      {/* Reviews grid */}
+      <div className="px-6 py-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
           {testimonials.map((review, index) => (
             <article
               key={index}
-              className="relative bg-muted/30 hover:bg-muted/50 transition-colors rounded-sm p-5 border border-border/60"
+              className="relative flex flex-col bg-muted/30 hover:bg-muted/50 transition-colors rounded-sm p-5 border border-border/60"
             >
               <Quote
                 className="absolute top-3 right-3 w-6 h-6 text-gold/30"
@@ -108,7 +101,7 @@ const AdaxaTestimonials = ({
                 href={review.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 mt-3 text-xs font-body uppercase tracking-wider text-gold hover:text-foreground transition-colors"
+                className="inline-flex items-center gap-1.5 mt-auto pt-3 text-xs font-body uppercase tracking-wider text-gold hover:text-foreground transition-colors"
               >
                 View original review
                 <ExternalLink className="w-3 h-3" />
@@ -116,8 +109,6 @@ const AdaxaTestimonials = ({
             </article>
           ))}
         </div>
-        {/* Fade hint at bottom */}
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-card to-transparent" />
       </div>
 
       {/* CTA */}

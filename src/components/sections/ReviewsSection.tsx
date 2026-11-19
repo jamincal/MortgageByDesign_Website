@@ -218,7 +218,7 @@ const ReviewsSection = () => {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <AdaxaTestimonials
             testimonials={[...testimonials].sort(
               (a, b) => new Date(b.date ?? 0).getTime() - new Date(a.date ?? 0).getTime()
