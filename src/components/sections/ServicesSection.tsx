@@ -10,6 +10,12 @@ import {
 
 const products = [
   {
+    icon: Building,
+    title: "Commercial Loans",
+    description:
+      "Financing for business owners and investors purchasing or refinancing income-producing properties, office, retail, industrial, and mixed-use, structured around cash flow, performance, and long-term goals.",
+  },
+  {
     icon: Home,
     title: "Conventional, FHA, VA & Jumbo Loans",
     description:
@@ -38,12 +44,6 @@ const products = [
     title: "Asset-Based & Non-Traditional Income Loans",
     description:
       "If your income doesn't fit the standard W-2 box, you still have options. Bank statements, assets, or alternative documentation help self-employed borrowers, entrepreneurs, and retirees qualify.",
-  },
-  {
-    icon: Building,
-    title: "Commercial Loans",
-    description:
-      "Financing for business owners and investors purchasing or refinancing income-producing properties, office, retail, industrial, and mixed-use, structured around cash flow, performance, and long-term goals.",
   },
   {
     icon: Zap,
