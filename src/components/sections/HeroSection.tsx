@@ -34,7 +34,7 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="underline decoration-primary-foreground/40 underline-offset-4 hover:text-gold hover:decoration-gold transition-colors"
             >
-              Adaxa Home Loans
+              Adaxa Home Loans DBA Nexa Lending
             </a>
           </p>
           <h1
