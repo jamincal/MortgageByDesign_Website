@@ -1,5 +1,18 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Building2 } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
+
+const sponsors = [
+  {
+    name: "Adaxa Home Loans",
+    nmls: "2380533",
+    address: ["16767 N. Perimeter Dr.", "STE 150", "Scottsdale, AZ 85260"],
+  },
+  {
+    name: "Nexa Lending",
+    nmls: "1660690",
+    address: ["5559 S Sossaman Rd Bldg #1", "Ste #101", "Mesa, AZ 85212"],
+  },
+];
 
 const contacts = [
   {
@@ -75,6 +88,32 @@ const ContactSection = () => {
               Send a Message
             </h3>
             <ContactForm />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mt-16">
+            {sponsors.map((sponsor) => (
+              <div
+                key={sponsor.name}
+                className="p-8 bg-secondary rounded-sm border border-border/60"
+              >
+                <div className="w-12 h-12 mb-4 bg-gold/10 rounded-full flex items-center justify-center">
+                  <Building2 className="w-5 h-5 text-gold" />
+                </div>
+                <h4 className="font-heading text-2xl text-foreground font-semibold mb-1">
+                  {sponsor.name}
+                </h4>
+                <p className="font-body text-sm text-muted-foreground mb-4">
+                  NMLS# {sponsor.nmls}
+                </p>
+                <address className="not-italic font-body text-sm text-muted-foreground leading-relaxed">
+                  {sponsor.address.map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </address>
+              </div>
+            ))}
           </div>
         </div>
       </div>
